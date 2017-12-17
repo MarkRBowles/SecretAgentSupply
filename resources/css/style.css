@@ -66,6 +66,11 @@ nav ul {
     font-weight: bold;
 }
 
+.mobile-menu {
+	text-align: center;
+	display: none;
+}
+
 .white {
 	background-color: white;
 }
@@ -73,6 +78,7 @@ nav ul {
 .products, .business-info {
 	padding: 3rem;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -123,4 +129,19 @@ footer {
     background-color: black;
     color: white;
     margin-top: 4rem;
+}
+
+@media screen  and (max-width: 1024px) {
+	.menu {
+		display: none;
+	}
+	.mobile-menu {
+		display: block;
+	}
+}
+
+@media screen  and (max-width: 470px) {
+	.title {
+		display: block;
+	}
 }
